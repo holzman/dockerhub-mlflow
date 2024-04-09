@@ -8,7 +8,7 @@ RUN apt-get update -y && \
 RUN pip install --upgrade pip
 RUN pip install PyMySQL mysqlclient && \   
     pip install psycopg2-binary && \
-    pip install mlflow[extras]==2.10.0
+    pip install mlflow[extras]==2.11.3
 
 ENV BACKEND_STORE_URI=
 ENV DEFAULT_ARTIFACT_ROOT=/opt/artifact
